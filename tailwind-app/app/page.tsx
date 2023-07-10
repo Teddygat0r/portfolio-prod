@@ -11,7 +11,6 @@ export default function Home() {
         */}
         <Portfolio/>
         <About/>
-        balls
     </div>
   )
 }

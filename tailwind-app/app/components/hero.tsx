@@ -12,8 +12,8 @@ export default function Hero() {
                 }
             </h3>
             <div className="flex flex-row gap-4 m-auto text-4xl">
-                <Link href="https://www.linkedin.com/in/joshua-zhang-63a095236/"><BiLogoLinkedin/></Link>
-                <Link href="https://github.com/Teddygat0r"><BiLogoGithub/></Link>
+                <Link href="https://www.linkedin.com/in/joshua-zhang-63a095236/" className="transition duration-300 hover:text-violet-300"><BiLogoLinkedin/></Link>
+                <Link href="https://github.com/Teddygat0r" className="transition duration-300 hover:text-violet-300"><BiLogoGithub/></Link>
             </div>
         </div>
     );

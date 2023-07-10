@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import LinkDetails from "./interfaces/LinkDetails";
+import Footer from "./components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const NAVBAR_URLS: LinkDetails[] = [
@@ -38,6 +39,7 @@ export default function RootLayout({
                     })}
                 </nav>
                 <main className="h-full">{children}</main>
+                <Footer/>
             </body>
         </html>
     );
