@@ -18,7 +18,7 @@ const TECH_LOGOS: string[] = [
 
 export default function About() {
     return (
-        <div className="flex justify-center gap-8 px-[20%] mb-12 bg-slate-900">
+        <section className="flex justify-center gap-8 px-[20%] mb-12 bg-slate-900" id="about" >
             <div className="flex flex-col w-[50%]">
                 <h1 className="mb-8 text-3xl font-semibold text-slate-200">
                     About Me
@@ -43,7 +43,7 @@ export default function About() {
                     </Link>
                     <Link href="mailto:jzhang0224@gmail.com">
                         <button className="flex justify-between gap-2 px-4 py-2 transition duration-300 border rounded-md border-violet-300 text-violet-300 hover:text-violet-200 hover:drop-shadow-glow hover:border-violet-200">
-                            Contact Me
+                            Contact
                             <HiOutlineMail className="m-auto text-lg" />
                         </button>
                     </Link>
@@ -59,6 +59,6 @@ export default function About() {
                     })}
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
