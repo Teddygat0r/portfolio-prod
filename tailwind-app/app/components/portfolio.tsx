@@ -5,7 +5,7 @@ const projects: ProjectProps[] = [
     {
         name: "Racketeer Games",
         image: "Racketeer",
-        tech: ["Vue", "Tailwind", "Firebase"],
+        tech: ["Nuxt", "Vue", "Tailwind", "Firebase"],
         desc: `Fullstack blog built around the Nuxt 3 Framework and Tailwind. It features User Auth, Likes, Read/Post, and Commenting features. 
                 WYSIWYG editor designed with TipTap featuring image & video upload, font settings, text formatting -- similar Google Docs.
                 Users are also able to filter for posts by tags and topics custom chosen by the author of the post.`,
@@ -22,6 +22,23 @@ const projects: ProjectProps[] = [
         url: "https://github.com/Teddygat0r/blog",
     },
     {
+        name: "WildEye AI",
+        image: "Wildeye",
+        tech: ["Tensorflow", "Next", "React", "Flask", "Tailwind"],
+        desc: `Identifies movement within camera footage using image subtraction techniques, then submitting frames with movement to the image
+                classification model. If it is determined that there was an animal inside the frame, it sends a POST request to the FLASK server to store the image. 
+                Finally the database can be viewed through the NextJS frontend.`,
+        url: "https://github.com/Teddygat0r/jetson-animal-detection",
+    },
+    {
+        name: "Batman's Kitchen Web Design",
+        image: "Batman",
+        tech: ["Nuxt", "Vue", "Tailwind"],
+        desc: `The redesigned homepage of UW Batman's Kitchen incorporates cutting-edge features to deliver an enhanced user experience. With reactive design, the website
+                seamlessly adapts to various devices, ensuring a consistent and visually pleasing interface for both desktop and mobile users. `,
+        url: "https://github.com/Teddygat0r/",
+    },
+    {
         name: "FFA Chess",
         image: "Chess",
         tech: ["Javascript", "Express", "Socketio"],
@@ -33,7 +50,8 @@ const projects: ProjectProps[] = [
 
 export default function Portfolio() {
     return (
-        <section className="flex flex-col justify-center gap-8 text-center mb-[4%] py-[4%] bg-white" id="portfolio">
+        <section
+            className="flex flex-col justify-center gap-8 text-center mb-[4%] py-[4%] bg-white"
             <h1 className="text-5xl font-bold text-slate-900">
                 My <span className="text-violet-800">Projects</span>
             </h1>
