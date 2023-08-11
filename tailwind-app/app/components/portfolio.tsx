@@ -3,13 +3,22 @@ import ProjectProps from "../interfaces/ProjectProps";
 
 const projects: ProjectProps[] = [
     {
-        name: "Racketeer Games",
-        image: "Racketeer",
-        tech: ["Nuxt", "Vue", "Tailwind", "Firebase"],
-        desc: `Fullstack blog built around the Nuxt 3 Framework and Tailwind. It features User Auth, Likes, Read/Post, and Commenting features. 
-                WYSIWYG editor designed with TipTap featuring image & video upload, font settings, text formatting -- similar Google Docs.
-                Users are also able to filter for posts by tags and topics custom chosen by the author of the post.`,
-        url: "https://github.com/Teddygat0r/blog",
+        name: "ByTech",
+        image: "bytech",
+        tech: ["Next", "React", "Typescript", "Tailwind", "Firebase"],
+        desc: `Classroom built for programming teachers. Allows teachers to host classrooms and publish coding assignments for their students. Gives teachers a 
+                leetcode-esque platform for them to publish their own programming problems, create test cases, and manage assignments. Compiles python into WASM 
+                to be run in browsers.`,
+        url: "https://github.com/Teddygat0r/dualhacks",
+    },
+    {
+        name: "WildEye AI",
+        image: "Wildeye",
+        tech: ["Tensorflow", "Next", "React", "Flask", "Tailwind"],
+        desc: `Identifies movement within camera footage using image subtraction techniques, then submitting frames with movement to the image
+                classification model. If it is determined that there was an animal inside the frame, it sends a POST request to the FLASK server to store the image. 
+                Finally the database can be viewed through the NextJS frontend.`,
+        url: "https://github.com/Teddygat0r/jetson-animal-detection",
     },
     {
         name: "Identifying NEOS using Tensorflow",
@@ -22,13 +31,13 @@ const projects: ProjectProps[] = [
         url: "https://github.com/Teddygat0r/blog",
     },
     {
-        name: "WildEye AI",
-        image: "Wildeye",
-        tech: ["Tensorflow", "Next", "React", "Flask", "Tailwind"],
-        desc: `Identifies movement within camera footage using image subtraction techniques, then submitting frames with movement to the image
-                classification model. If it is determined that there was an animal inside the frame, it sends a POST request to the FLASK server to store the image. 
-                Finally the database can be viewed through the NextJS frontend.`,
-        url: "https://github.com/Teddygat0r/jetson-animal-detection",
+        name: "Racketeer Games",
+        image: "Racketeer",
+        tech: ["Nuxt", "Vue", "Tailwind", "Firebase"],
+        desc: `Fullstack blog built around the Nuxt 3 Framework and Tailwind. It features User Auth, Likes, Read/Post, and Commenting features. 
+                WYSIWYG editor designed with TipTap featuring image & video upload, font settings, text formatting -- similar Google Docs.
+                Users are also able to filter for posts by tags and topics custom chosen by the author of the post.`,
+        url: "https://github.com/Teddygat0r/blog",
     },
     {
         name: "Batman's Kitchen Web Design",
