@@ -3,6 +3,17 @@ import ProjectProps from "../interfaces/ProjectProps";
 
 const projects: ProjectProps[] = [
     {
+        name: "Spotify Recommender",
+        image: "Spotify",
+        tech: ["Next", "React", "Typescript", "Tailwind", "Scikit"],
+        desc: `employed various data preprocessing techniques, including One Hot Encoding, MinMax scaling, and Z-score normalization, 
+                to standardize the columns of a dataset. This data was then used to generate vector embeddings for 12,000 songs using distance
+                formulas such as Cosine, Euclidean, and Manhattan. To make this resource accessible, I developed a Flask API server for
+                fetching song recommendations. Additionally, I created an aesthetically pleasing user interface using Next.js and
+                Tailwind CSS, providing users with a visual representation of songs and their recommended counterparts.`,
+        url: "https://github.com/Teddygat0r/spotify-recommender",
+    },
+    {
         name: "ByTech",
         image: "bytech",
         tech: ["Next", "React", "Typescript", "Tailwind", "Firebase"],
@@ -28,7 +39,7 @@ const projects: ProjectProps[] = [
                 goal is to develop a deep learning model that can identify and classify NEOs based on their infrared signatures. By leveraging 
                 TensorFlow's capabilities, this project contributes to planetary defense efforts by enhancing our understanding and monitoring of
                 potentially hazardous asteroids near Earth.`,
-        url: "https://github.com/Teddygat0r/blog",
+        url: "/projects/astro.pdf",
     },
     {
         name: "Racketeer Games",
