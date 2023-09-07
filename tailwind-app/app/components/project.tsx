@@ -35,13 +35,14 @@ const Project: React.FC<ProjectProps> = ({ name, image, tech, desc, url }) => {
                 <div>
                     <h1 className="text-xl font-bold text-slate-900">{name}</h1>
                 </div>
-                <Image
-                    src={`/projects/${image}.png`}
-                    width={window.screen.width - 64}
-                    height="69"
-                    alt={name}
-                    className="object-fill h-auto m-auto rounded-md"
-                />
+                <div className="relative flex h-64 mx-4">
+                    <Image
+                        src={`/projects/${image}.png`}
+                        fill={true}
+                        alt={name}
+                        className="object-fill h-auto m-auto rounded-md"
+                    />
+                </div>
                 <div className="flex justify-between px-8">
                     <div className="flex gap-2">
                         {tech.map((value, i) => {
