@@ -14,7 +14,8 @@ export default function Hero() {
 
     return (
         <div
-            className="flex flex-col justify-center gap-8 text-center pb-[7%]"
+            className="flex flex-col justify-center gap-8 text-center md:pb-[7%] h-screen md:h-full"
+            id="hero"
             onPointerMove={(e) => {
                 makeVisible();
                 document.getElementById("blob")?.animate(
@@ -38,21 +39,24 @@ export default function Hero() {
                 className="absolute justify-start w-[10%] aspect-square bg-gradient-to-br from-sky-500 to-emerald-800 rounded-full -z-10 blur-[100px] duration-1000 opacity-0 transition"
                 id="blob"></div>
             <NavBar />
-            <h1 className="mt-12 text-6xl font-bold text-slate-100">
-                I'm Joshua Zhang
+            <h1 className="mt-auto text-6xl font-bold md:mt-12 text-slate-100">
+                I'm Joshua <span className="hidden md:inline">Zhang</span>
             </h1>
             <h3 className="text-2xl font-semibold text-slate-300">
                 A Fullstack Developer at the{" "}
                 <span className="text-violet-300">
                     University of Washington
                 </span>
-                .<br />I love working with{" "}
-                <span className="text-violet-300">Web & AI</span> frameworks!
+                <span className="hidden md:inline">
+                    .<br />I love working with{" "}
+                    <span className="text-violet-300">Web & AI</span>{" "}
+                    frameworks!
+                </span>
                 {
                     //Add Circle effect
                 }
             </h3>
-            <div className="flex flex-row gap-4 m-auto text-4xl">
+            <div className="flex flex-row gap-4 mx-auto mb-auto text-4xl md:m-auto">
                 <Link
                     href="https://www.linkedin.com/in/joshua-zhang-63a095236/"
                     className="transition duration-300 hover:text-violet-300">

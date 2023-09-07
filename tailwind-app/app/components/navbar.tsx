@@ -9,7 +9,10 @@ const NAVBAR_URLS: LinkDetails[] = [
     { desc: "About", url: "about" },
 ];
 
-const scroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, url: string) => {
+const scroll = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    url: string
+) => {
     e.preventDefault();
     const obj = document.getElementById(url.toLowerCase());
     obj?.scrollIntoView({ behavior: "smooth" });
@@ -17,7 +20,9 @@ const scroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, url: string)
 
 export default function NavBar() {
     return (
-        <nav className="flex justify-center gap-16 mt-4 mb-8" id="nav">
+        <nav
+            className="justify-center hidden gap-16 mt-4 mb-8 md:flex"
+            id="nav">
             {NAVBAR_URLS.map(({ desc, url }) => {
                 return (
                     <Link

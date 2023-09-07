@@ -73,7 +73,7 @@ export default function Portfolio() {
         <section
             className="flex flex-col justify-center gap-8 text-center mb-[4%] py-[4%] bg-white"
             id="portfolio">
-            <h1 className="text-5xl font-bold text-slate-900">
+            <h1 className="my-8 text-5xl font-bold text-slate-900 md:my-0">
                 My <span className="text-violet-800">Projects</span>
             </h1>
             <div className="flex flex-col gap-12">
