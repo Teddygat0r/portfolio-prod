@@ -1,6 +1,7 @@
 import Hero from "./components/hero";
 import Portfolio from "./components/portfolio";
 import About from "./components/about";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function Home() {
     return (
@@ -8,6 +9,7 @@ export default function Home() {
             <Hero />
             <Portfolio />
             <About />
+            <Analytics />
         </div>
     );
 }
