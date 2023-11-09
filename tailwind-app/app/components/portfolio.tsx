@@ -23,6 +23,14 @@ const projects: ProjectProps[] = [
         url: "https://github.com/Teddygat0r/dualhacks",
     },
     {
+        name: "Auto Reddit Video",
+        image: "reddit",
+        tech: ["Python"],
+        desc: `Built a python script that scrapes reddit for a popular post, then edits together a Youtube Short / TikTok reading the post using text to speech, 
+               with minecraft parkour playing in the background. Generated ~50k views and 1.5k likes across all platforms.`,
+        url: "https://github.com/Teddygat0r/auto-reddit-video",
+    },
+    {
         name: "WildEye AI",
         image: "Wildeye",
         tech: ["Tensorflow", "Next", "React", "Flask", "Tailwind"],
