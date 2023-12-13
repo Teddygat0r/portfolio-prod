@@ -6,7 +6,7 @@ const projects: ProjectProps[] = [
         name: "Spotify Recommender",
         image: "Spotify",
         tech: ["Next", "React", "Typescript", "Tailwind", "Scikit"],
-        desc: `employed various data preprocessing techniques, including One Hot Encoding, MinMax scaling, and Z-score normalization, 
+        desc: `Employed various data preprocessing techniques, including One Hot Encoding, MinMax scaling, and Z-score normalization, 
                 to standardize the columns of a dataset. This data was then used to generate vector embeddings for 12,000 songs using distance
                 formulas such as Cosine, Euclidean, and Manhattan. To make this resource accessible, I developed a Flask API server for
                 fetching song recommendations. Additionally, I created an aesthetically pleasing user interface using Next.js and
