@@ -64,7 +64,7 @@ const projects: ProjectProps[] = [
         tech: ["Nuxt", "Vue", "Tailwind"],
         desc: `The redesigned homepage of UW Batman's Kitchen incorporates cutting-edge features to deliver an enhanced user experience. With reactive design, the website
                 seamlessly adapts to various devices, ensuring a consistent and visually pleasing interface for both desktop and mobile users. `,
-        url: "https://github.com/Teddygat0r/",
+        url: "https://github.com/Teddygat0r/batmans-kitchen-homepage",
     },
     {
         name: "FFA Chess",
