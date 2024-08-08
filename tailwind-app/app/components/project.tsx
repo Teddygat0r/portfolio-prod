@@ -111,7 +111,7 @@ const Project: React.FC<ProjectProps> = ({ name, image, tech, desc, url }) => {
                             <div className="absolute z-10 w-full h-full transition duration-500 border-2 rounded-md opacity-100 bg-slate-100 border-slate-400 hover:border-opacity-0 hover:text-violet-800">
                                 <Link
                                     href={url}
-                                    className="flex justify-start gap-1 py-1 pl-2 pr-3 align-middle rounded-md opacity-100 bg-slate-100">
+                                    className="flex justify-start gap-1 py-1 pl-2 pr-3 align-middle rounded-md opacity-100 bg-slate-100 text-slate-900">
                                     <div className="m-auto">
                                         <BiLogoGithub className="m-auto text-3xl" />
                                     </div>

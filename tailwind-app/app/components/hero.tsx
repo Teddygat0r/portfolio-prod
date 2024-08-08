@@ -42,7 +42,7 @@ export default function Hero() {
             <h1 className="mt-auto text-6xl font-bold md:mt-12 text-slate-100">
                 I'm Joshua <span className="hidden md:inline">Zhang</span>
             </h1>
-            <h3 className="text-2xl font-semibold text-slate-300">
+            <h2 className="text-2xl font-semibold text-slate-300">
                 A Fullstack Developer at the{" "}
                 <span className="text-violet-300">
                     University of Washington
@@ -55,16 +55,16 @@ export default function Hero() {
                 {
                     //Add Circle effect
                 }
-            </h3>
+            </h2>
             <div className="flex flex-row gap-4 mx-auto mb-auto text-4xl md:m-auto">
                 <Link
                     href="https://www.linkedin.com/in/joshua-zhang-63a095236/"
-                    className="transition duration-300 hover:text-violet-300">
+                    className="transition duration-300 hover:text-violet-300" aria-label="View My linkedin">
                     <BiLogoLinkedin />
                 </Link>
                 <Link
                     href="https://github.com/Teddygat0r"
-                    className="transition duration-300 hover:text-violet-300">
+                    className="transition duration-300 hover:text-violet-300" aria-label="View My Github">
                     <BiLogoGithub />
                 </Link>
             </div>

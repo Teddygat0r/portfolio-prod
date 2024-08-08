@@ -11,7 +11,8 @@ export default function FooterToTop() {
         <div className="absolute inset-x-0 flex justify-center -top-[18px]">
             <button
                 className="p-3 transition duration-300 rounded-full bg-slate-400 text-slate-900 hover:bg-violet-300"
-                onClick={(e) => scroll(e)}>
+                onClick={(e) => scroll(e)}
+                aria-label="Scroll back to top">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
