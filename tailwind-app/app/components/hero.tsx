@@ -47,14 +47,6 @@ export default function Hero() {
                 <span className="text-violet-300">
                     University of Washington
                 </span>
-                <span className="hidden md:inline">
-                    .<br />I love working with{" "}
-                    <span className="text-violet-300">Web & AI</span>{" "}
-                    frameworks!
-                </span>
-                {
-                    //Add Circle effect
-                }
             </h2>
             <div className="flex flex-row gap-4 mx-auto mb-auto text-4xl md:m-auto">
                 <Link
