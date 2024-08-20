@@ -22,18 +22,15 @@ export default function About() {
             className="flex md:flex-row flex-col justify-center gap-8 md:px-[20%] md:mb-12 bg-slate-900"
             id="about">
             <div className="hidden md:flex flex-col w-[50%]">
-                <h1 className="mb-8 text-3xl font-semibold text-slate-200">
+                <h1 className="mb-8 text-3xl font-semibold text-slate-200 text-center">
                     About Me
                 </h1>
-                <p className="text-lg">
+                <p className="text-lg text-center">
                     I'm a technology enthusiast with a passion for web
-                    development and machine learning. Proficient in JavaScript,
-                    Python, and various frameworks, I enjoy creating innovative
-                    solutions that have a tangible impact. From dynamic web
-                    applications to machine learning algorithms, I thrive on
-                    collaborating with teams to deliver top-notch products.
+                    development and machine learning. I'm most proficient in React 
+                    & Next JS + Tailwind Tech stacks, but I've also used many other frameworks!
                     Seeking opportunities to contribute to cutting-edge projects
-                    and further develop skills in electrical engineering. Let's
+                    and further develop skills in CS. Let's
                     collaborate to build something extraordinary!
                 </p>
                 <div className="flex justify-center w-full gap-4 mt-6">
