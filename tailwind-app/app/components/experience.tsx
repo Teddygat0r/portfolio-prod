@@ -1,6 +1,5 @@
 import ExperienceProps from "../interfaces/ExperienceProps";
 import Role from "./role";
-import Image from "next/image";
 
 const experience: ExperienceProps[] = [
     {
@@ -69,11 +68,9 @@ export default function Experience() {
                     })}
                 </div>
                 <div className="hidden md:flex">
-                    <Image
-                        src="/hero.png"
-                        alt={"Hero Robot"}
-                        width={667}
-                        height={667}
+                    <img
+                        src="/catCoding.webp"
+                        alt={"Cat Coding"}
                         className="m-auto aspect-square rounded-full"
                     />
                 </div>

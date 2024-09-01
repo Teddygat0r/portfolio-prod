@@ -3,28 +3,14 @@
 import { BiLogoGithub, BiLogoLinkedin } from "react-icons/bi";
 import Link from "next/link";
 import NavBar from "./navbar";
+import { moveBlob, toggleVisible } from "./blobHelpers";
 
 export default function Hero() {
-    const toggleVisible = (input: string) => {
-        const object = document.getElementById("blob");
-        if (object) {
-            object.style.opacity = input;
-        }
-    };
-
     return (
         <section
             className="flex h-screen flex-col justify-center gap-8 text-center md:h-full md:pb-[7%]"
             id="hero"
-            onPointerMove={(e) => {
-                document.getElementById("blob")?.animate(
-                    {
-                        left: `${e.clientX}px`,
-                        top: `${e.clientY}px`,
-                    },
-                    { duration: 5000, fill: "forwards" },
-                );
-            }}
+            onPointerMove={moveBlob}
             onMouseEnter={(e) => {
                 toggleVisible("1");
             }}

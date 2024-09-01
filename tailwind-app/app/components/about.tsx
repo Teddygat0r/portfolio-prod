@@ -2,6 +2,7 @@
 import TechIcon from "./TechIcon";
 import Link from "next/link";
 import { HiDownload, HiOutlineMail } from "react-icons/hi";
+import { moveBlob, toggleVisible } from "./blobHelpers";
 
 const TECH_LOGOS: string[] = [
     "Python",
@@ -21,8 +22,15 @@ const TECH_LOGOS: string[] = [
 export default function About() {
     return (
         <section
-            className="flex flex-col justify-center gap-12 bg-slate-900 pt-[4%] md:mb-12 md:flex-row lg:px-[20%]"
+            className="my-[8%] flex flex-col justify-center gap-12 md:flex-row lg:px-[20%]"
             id="about"
+            onPointerMove={moveBlob}
+            onMouseEnter={(e) => {
+                toggleVisible("1");
+            }}
+            onMouseLeave={(e) => {
+                toggleVisible("0");
+            }}
         >
             <div className="hidden w-[50%] flex-col md:flex">
                 <h1 className="mb-8 text-center text-3xl font-semibold text-slate-200">
