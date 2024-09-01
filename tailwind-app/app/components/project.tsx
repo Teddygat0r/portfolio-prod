@@ -35,12 +35,12 @@ const Project: React.FC<ProjectProps> = ({ name, image, tech, desc, url }) => {
                 <div>
                     <h1 className="text-xl font-bold text-slate-900">{name}</h1>
                 </div>
-                <div className="relative flex h-64 mx-4">
+                <div className="relative mx-4 flex h-64">
                     <Image
                         src={`/projects/${image}.png`}
                         fill={true}
                         alt={name}
-                        className="object-fill h-auto m-auto rounded-md"
+                        className="m-auto h-auto rounded-md object-fill"
                     />
                 </div>
                 <div className="flex justify-between px-8">
@@ -53,42 +53,43 @@ const Project: React.FC<ProjectProps> = ({ name, image, tech, desc, url }) => {
                                     height="32"
                                     alt={value}
                                     key={i}
-                                    className="w-8 h-auto aspect-square"
+                                    className="aspect-square h-auto w-8"
                                 />
                             );
                         })}
                     </div>
                     <Link
                         href={url}
-                        className="flex justify-start gap-1 py-1 pl-2 pr-3 text-purple-700 align-middle border border-purple-500 rounded-md opacity-100 bg-slate-200">
+                        className="flex justify-start gap-1 rounded-md border border-purple-500 bg-slate-200 py-1 pl-2 pr-3 align-middle text-purple-700 opacity-100"
+                    >
                         <div className="m-auto">
                             <BiLogoGithub className="m-auto text-3xl" />
                         </div>
-                        <p className="m-auto ">Code</p>
+                        <p className="m-auto">Code</p>
                     </Link>
                 </div>
             </div>
-            <div className="justify-center hidden gap-8 md:flex">
-                <div className="w-[50%] flex justify-end">
+            <div className="hidden justify-center gap-8 md:flex">
+                <div className="flex w-[50%] justify-end">
                     <Image
                         src={`/projects/${image}.png`}
                         width="512"
                         height="69"
                         alt={name}
-                        className="object-fill h-auto rounded-md"
+                        className="h-auto rounded-md object-fill"
                     />
                 </div>
-                <div className="flex flex-col justify-center gap-2 text-left w-[50%]">
+                <div className="flex w-[50%] flex-col justify-center gap-2 text-left">
                     <div>
                         <h1 className="text-2xl font-bold text-slate-900">
                             {name}
                         </h1>
-                        <div className="w-[80%] rounded-full h-[2px] bg-gradient-to-r from-violet-800 to-slate-100"></div>
+                        <div className="h-[2px] w-[80%] rounded-full bg-gradient-to-r from-violet-800 to-slate-100"></div>
                     </div>
-                    <p className="text-slate-600 max-w-[60%] text-sm my-2">
+                    <p className="my-2 max-w-[60%] text-sm text-slate-600">
                         {desc}
                     </p>
-                    <div className="flex justify-start gap-2 mt-2">
+                    <div className="mt-2 flex justify-start gap-2">
                         {tech.map((value, i) => {
                             return (
                                 <Image
@@ -97,34 +98,39 @@ const Project: React.FC<ProjectProps> = ({ name, image, tech, desc, url }) => {
                                     height="32"
                                     alt={value}
                                     key={i}
-                                    className="w-8 h-auto aspect-square"
+                                    className="aspect-square h-auto w-8"
                                 />
                             );
                         })}
                         <div
                             className="relative m-40 my-auto ml-2 rounded-md"
                             onMouseEnter={(e) => enableBorder(e)}
-                            onMouseLeave={(e) => disableBorder(e)}>
+                            onMouseLeave={(e) => disableBorder(e)}
+                        >
                             <div
-                                className="absolute z-0 w-full h-full transition duration-500 rounded-md opacity-0 card"
-                                id="border"></div>
-                            <div className="absolute z-10 w-full h-full transition duration-500 border-2 rounded-md opacity-100 bg-slate-100 border-slate-400 hover:border-opacity-0 hover:text-violet-800">
+                                className="card absolute z-0 h-full w-full rounded-md opacity-0 transition duration-500"
+                                id="border"
+                            ></div>
+                            <div className="absolute z-10 h-full w-full rounded-md border-2 border-slate-400 bg-slate-100 opacity-100 transition duration-500 hover:border-opacity-0 hover:text-violet-800">
                                 <Link
                                     href={url}
-                                    className="flex justify-start gap-1 py-1 pl-2 pr-3 align-middle rounded-md opacity-100 bg-slate-100 text-slate-900">
+                                    className="flex justify-start gap-1 rounded-md bg-slate-100 py-1 pl-2 pr-3 align-middle text-slate-900 opacity-100"
+                                    target="_blank"
+                                >
                                     <div className="m-auto">
                                         <BiLogoGithub className="m-auto text-3xl" />
                                     </div>
-                                    <p className="m-auto ">Code</p>
+                                    <p className="m-auto">Code</p>
                                 </Link>
                             </div>
                             <Link
                                 href={url}
-                                className="flex justify-start gap-1 py-1 pl-2 pr-3 align-middle border-2 rounded-md opacity-0 bg-slate-100 -z-10">
+                                className="-z-10 flex justify-start gap-1 rounded-md border-2 bg-slate-100 py-1 pl-2 pr-3 align-middle opacity-0"
+                            >
                                 <div className="m-auto">
                                     <BiLogoGithub className="m-auto text-3xl" />
                                 </div>
-                                <p className="m-auto ">Code</p>
+                                <p className="m-auto">Code</p>
                             </Link>
                         </div>
                     </div>

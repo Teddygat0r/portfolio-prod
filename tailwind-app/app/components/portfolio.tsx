@@ -79,7 +79,7 @@ const projects: ProjectProps[] = [
 export default function Portfolio() {
     return (
         <section
-            className="flex flex-col justify-center gap-8 text-center mb-[4%] py-[4%] bg-white"
+            className="flex flex-col justify-center gap-8 text-center py-[8%] bg-white"
             id="portfolio">
             <h1 className="my-8 text-5xl font-bold text-slate-900 md:my-0">
                 My <span className="text-violet-800">Projects</span>
