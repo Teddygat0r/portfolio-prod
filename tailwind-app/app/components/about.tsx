@@ -46,13 +46,19 @@ export default function About() {
                 </p>
                 <div className="mt-6 flex w-full justify-center gap-4">
                     <Link href="/JoshuaZhangResume.pdf">
-                        <button className="flex justify-between gap-2 rounded-md border border-violet-300 px-4 py-2 text-violet-300 transition duration-300 hover:border-violet-200 hover:text-violet-200 hover:drop-shadow-glow">
+                        <button
+                            className="flex justify-between gap-2 rounded-md border border-violet-300 px-4 py-2 text-violet-300 transition duration-300 hover:border-violet-200 hover:text-violet-200 hover:drop-shadow-glow"
+                            id="resume"
+                        >
                             Resumé
                             <HiDownload className="m-auto text-lg" />
                         </button>
                     </Link>
                     <Link href="mailto:jzhang0224@gmail.com">
-                        <button className="flex justify-between gap-2 rounded-md border border-violet-300 px-4 py-2 text-violet-300 transition duration-300 hover:border-violet-200 hover:text-violet-200 hover:drop-shadow-glow">
+                        <button
+                            className="flex justify-between gap-2 rounded-md border border-violet-300 px-4 py-2 text-violet-300 transition duration-300 hover:border-violet-200 hover:text-violet-200 hover:drop-shadow-glow"
+                            id="contact"
+                        >
                             Contact
                             <HiOutlineMail className="m-auto text-lg" />
                         </button>
@@ -85,13 +91,19 @@ export default function About() {
                 </h1>
                 <div className="flex flex-wrap justify-center gap-8">
                     <Link href="/JoshuaZhangResume.pdf">
-                        <button className="flex justify-between gap-2 rounded-md border border-violet-300 px-4 py-2 text-violet-300 transition duration-300 hover:border-violet-200 hover:text-violet-200 hover:drop-shadow-glow">
+                        <button
+                            className="flex justify-between gap-2 rounded-md border border-violet-300 px-4 py-2 text-violet-300 transition duration-300 hover:border-violet-200 hover:text-violet-200 hover:drop-shadow-glow"
+                            id="resume-mobile"
+                        >
                             Resumé
                             <HiDownload className="m-auto text-lg" />
                         </button>
                     </Link>
                     <Link href="mailto:jzhang0224@gmail.com">
-                        <button className="flex justify-between gap-2 rounded-md border border-violet-300 px-4 py-2 text-violet-300 transition duration-300 hover:border-violet-200 hover:text-violet-200 hover:drop-shadow-glow">
+                        <button
+                            className="flex justify-between gap-2 rounded-md border border-violet-300 px-4 py-2 text-violet-300 transition duration-300 hover:border-violet-200 hover:text-violet-200 hover:drop-shadow-glow"
+                            id="contact-mobile"
+                        >
                             Contact
                             <HiOutlineMail className="m-auto text-lg" />
                         </button>

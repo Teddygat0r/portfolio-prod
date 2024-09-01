@@ -8,11 +8,13 @@ const scroll = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
 
 export default function FooterToTop() {
     return (
-        <div className="absolute inset-x-0 flex justify-center -top-[18px]">
+        <div className="absolute inset-x-0 -top-[18px] flex justify-center">
             <button
-                className="p-3 transition duration-300 rounded-full bg-slate-400 text-slate-900 hover:bg-violet-300"
+                className="rounded-full bg-slate-400 p-3 text-slate-900 transition duration-300 hover:bg-violet-300"
                 onClick={(e) => scroll(e)}
-                aria-label="Scroll back to top">
+                aria-label="Scroll back to top"
+                id="to-top"
+            >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -20,11 +22,13 @@ export default function FooterToTop() {
                     strokeWidth="2"
                     stroke="currentColor"
                     aria-hidden="true"
-                    className="w-3 h-3 bg-transparent">
+                    className="h-3 w-3 bg-transparent"
+                >
                     <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        d="M5 15l7-7 7 7"></path>
+                        d="M5 15l7-7 7 7"
+                    ></path>
                 </svg>
             </button>
         </div>

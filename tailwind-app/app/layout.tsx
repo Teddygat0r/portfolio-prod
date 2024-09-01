@@ -1,8 +1,9 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import NavBar from "./components/navbar";
 import Footer from "./components/footer";
+import { GoogleAnalytics } from "@next/third-parties/google";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -18,9 +19,11 @@ export default function RootLayout({
     return (
         <html lang="en" className="dark">
             <body
-                className={`${inter.className} dark:bg-slate-900 text-slate-400 flex flex-col`}>
+                className={`${inter.className} flex flex-col text-slate-400 dark:bg-slate-900`}
+            >
                 <main className="h-full">{children}</main>
                 <Footer />
+                <GoogleAnalytics gaId={"G-HGHL1B13CQ"} />
             </body>
         </html>
     );
