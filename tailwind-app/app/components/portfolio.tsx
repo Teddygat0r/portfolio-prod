@@ -50,6 +50,14 @@ const projects: ProjectProps[] = [
         url: "/projects/astro.pdf",
     },
     {
+        name: "Valorant Pro Vod Processor",
+        image: "riot",
+        tech: ["Python", "Next", "React", "Flask", "Tailwind"],
+        desc: `Processes a valorant (VCT) game into JSON data for the game to be analyzed later. Will be using NextJS and Flask to host this data on
+                a public frontend for users to look into.`,
+        url: "https://github.com/Teddygat0r/valorant_vod_processor",
+    },
+    {
         name: "Racketeer Games",
         image: "Racketeer",
         tech: ["Nuxt", "Vue", "Tailwind", "Firebase"],
@@ -79,8 +87,9 @@ const projects: ProjectProps[] = [
 export default function Portfolio() {
     return (
         <section
-            className="flex flex-col justify-center gap-8 text-center py-[8%] bg-white"
-            id="portfolio">
+            className="flex flex-col justify-center gap-8 bg-white py-[8%] text-center"
+            id="portfolio"
+        >
             <h1 className="my-8 text-5xl font-bold text-slate-900 md:my-0">
                 My <span className="text-violet-800">Projects</span>
             </h1>
