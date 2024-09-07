@@ -22,7 +22,7 @@ const TECH_LOGOS: string[] = [
 export default function About() {
     return (
         <section
-            className="my-[8%] flex flex-col justify-center gap-12 md:flex-row lg:px-[20%]"
+            className="py-[8%] flex flex-col justify-center gap-12 md:flex-row lg:px-[20%]"
             id="about"
             onPointerMove={moveBlob}
             onMouseEnter={(e) => {
@@ -85,7 +85,7 @@ export default function About() {
                     })}
                 </div>
             </div>
-            <div className="w-full bg-slate-800 pb-12 md:hidden">
+            <div className="w-full pb-12 md:hidden">
                 <h1 className="my-8 text-center text-3xl font-semibold text-slate-200">
                     Contact Me
                 </h1>
