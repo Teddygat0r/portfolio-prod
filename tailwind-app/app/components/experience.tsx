@@ -3,6 +3,13 @@ import Role from "./role";
 
 const experience: ExperienceProps[] = [
     {
+        name: "Amazon",
+        image: "January 2025 -> Current",
+        time: "2025",
+        desc: `Software Engineer Intern`,
+        url: "https://amazon.com/",
+    },
+    {
         name: "Art of Problem Solving",
         image: "Jun 2024 -> Sept 2024",
         time: "2024",
@@ -11,8 +18,8 @@ const experience: ExperienceProps[] = [
     },
     {
         name: "Advanced Robotics at UW",
-        image: "Sept 2023 -> Sept 2024",
-        time: "2023",
+        image: "Sept 2023 -> Current",
+        time: "2025",
         desc: `Controls Team Software Engineer`,
         url: "https://aruw.org/",
     },
