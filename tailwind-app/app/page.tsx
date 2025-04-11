@@ -3,6 +3,7 @@ import Portfolio from "./components/portfolio";
 import About from "./components/about";
 import { Analytics } from "@vercel/analytics/react";
 import Experience from "./components/experience";
+import Footer from "./components/footer";
 
 export default function Home() {
     return (
@@ -16,6 +17,7 @@ export default function Home() {
                 className="absolute -z-10 aspect-square w-[10%] justify-start rounded-full bg-gradient-to-br from-sky-500 to-emerald-800 opacity-0 blur-[100px] transition duration-1000"
                 id="blob"
             ></div>
+            <Footer />
         </div>
     );
 }

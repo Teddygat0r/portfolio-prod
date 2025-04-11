@@ -4,9 +4,9 @@ import Link from "next/link";
 import LinkDetails from "../interfaces/LinkDetails";
 
 const NAVBAR_URLS: LinkDetails[] = [
-    { desc: "Home", url: "/" },
-    { desc: "Projects", url: "portfolio" },
-    { desc: "About", url: "about" },
+    { desc: "Projects", url: "#portfolio" },
+    { desc: "About", url: "#about" },
+    { desc: "Friends", url: "friends" },
 ];
 
 const scroll = (
@@ -14,7 +14,7 @@ const scroll = (
     url: string
 ) => {
     e.preventDefault();
-    const obj = document.getElementById(url.toLowerCase());
+    const obj = document.getElementById(url.toLowerCase().slice(1));
     obj?.scrollIntoView({ behavior: "smooth" });
 };
 
@@ -27,9 +27,10 @@ export default function NavBar() {
                 return (
                     <Link
                         key={desc}
-                        href={`#${url}`}
+                        href={`${url}`}
                         onClick={(e) => {
-                            scroll(e, url);
+                            if (url.startsWith("#"))
+                                scroll(e, url);
                         }}
                         className="p-4 transition duration-300 border-b-2 border-slate-900 hover:border-violet-300 hover:text-violet-300">
                         {desc}
