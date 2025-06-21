@@ -33,9 +33,9 @@ export default function Hero() {
                     <span className="text-violet-300">together!</span>{" "}
                 </span>
             </h2>
-            <div className="mx-auto mb-auto flex flex-row gap-4 text-4xl md:m-auto">
+            <div className="flex flex-row gap-4 mx-auto mb-auto text-4xl md:m-auto">
                 <Link
-                    href="https://www.linkedin.com/in/joshua-zhang-63a095236/"
+                    href="https://www.linkedin.com/in/joshzh/"
                     className="transition duration-300 hover:text-violet-300"
                     aria-label="View My linkedin"
                 >

@@ -3,8 +3,15 @@ import Role from "./role";
 
 const experience: ExperienceProps[] = [
     {
+        name: "Stripe",
+        image: "June 2025 -> Current",
+        time: "2025",
+        desc: `Software Engineer Intern`,
+        url: "https://stripe.com/",
+    },
+    {
         name: "Amazon",
-        image: "January 2025 -> Current",
+        image: "January 2025 -> June 2025",
         time: "2025",
         desc: `Software Engineer Intern`,
         url: "https://amazon.com/",
@@ -29,21 +36,7 @@ const experience: ExperienceProps[] = [
         time: "2023",
         desc: `Software Engineer Intern`,
         url: "https://www.dhs.gov/",
-    },
-    {
-        name: "Red Cheetah Foundation",
-        image: "Jan 2023 -> June 2023",
-        time: "2023",
-        desc: `Computer Science Tutor`,
-        url: "https://redcheetahfoundation.org/",
-    },
-    {
-        name: "Fweefwop Cybersecurity",
-        image: "Sept 2019 -> June 2023",
-        time: "2019",
-        desc: `Web Developer`,
-        url: "https://www.fweefwop.club/",
-    },
+    }
 ];
 
 export default function Experience() {
@@ -78,7 +71,7 @@ export default function Experience() {
                     <img
                         src="/catCoding.webp"
                         alt={"Cat Coding"}
-                        className="m-auto aspect-square rounded-full"
+                        className="m-auto rounded-full aspect-square"
                     />
                 </div>
             </div>

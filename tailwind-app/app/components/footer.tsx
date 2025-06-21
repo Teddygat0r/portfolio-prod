@@ -16,7 +16,7 @@ export default function Footer() {
                     <BiLogoGmail />
                 </Link>
                 <Link
-                    href="https://www.linkedin.com/in/joshua-zhang-63a095236/"
+                    href="https://www.linkedin.com/in/joshzh/"
                     className="transition duration-300 hover:text-violet-300" aria-label="My linkedin">
                     <BiLogoLinkedin />
                 </Link>
