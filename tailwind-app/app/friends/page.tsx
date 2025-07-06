@@ -14,7 +14,14 @@ const friends: FriendDetails[] = [
         name: "Ryan Mar",
         url: "https://ryanmar.vercel.app/",
         image: "/friends/rm.png"
+    },
+    {
+        desc: "Le sserafim?",
+        name: "Howard Wei",
+        url: "https://hwei.vercel.app/",
+        image: "/friends/hwei.png"
     }
+    
 ]
 
 export default function Home() {
