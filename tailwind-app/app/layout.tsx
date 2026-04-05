@@ -16,11 +16,9 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" className="dark">
-            <body
-                className={`${inter.className} flex flex-col text-slate-400 dark:bg-slate-900`}
-            >
-                <main className="h-full">{children}</main>
+        <html lang="en">
+            <body className={inter.className}>
+                <main>{children}</main>
                 <GoogleAnalytics gaId={"G-HGHL1B13CQ"} />
             </body>
         </html>
