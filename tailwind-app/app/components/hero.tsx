@@ -23,14 +23,14 @@ export default function Hero() {
                 I'm Joshua <span className="hidden md:inline">Zhang</span>
             </h1>
             <h2 className="text-2xl font-semibold text-slate-300">
-                A Fullstack Developer at the{" "}
+                ML Systems Researcher at the{" "}
                 <span className="text-violet-300">
                     University of Washington
                 </span>
                 <span className="hidden md:inline">
                     .<br />
-                    Lets build something great{" "}
-                    <span className="text-violet-300">together!</span>{" "}
+                    Building efficient inference for{" "}
+                    <span className="text-violet-300">sequence models.</span>{" "}
                 </span>
             </h2>
             <div className="flex flex-row gap-4 mx-auto mb-auto text-4xl md:m-auto">

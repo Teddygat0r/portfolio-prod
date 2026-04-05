@@ -6,8 +6,8 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Joshua Zhang | SDE",
-    description: "i love ds",
+    title: "Joshua Zhang | ML Systems",
+    description: "ML systems researcher at the University of Washington. Focused on efficient inference, SSM state compression, and multi-GPU training infrastructure.",
 };
 
 export default function RootLayout({

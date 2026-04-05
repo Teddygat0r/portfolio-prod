@@ -6,16 +6,16 @@ import { moveBlob, toggleVisible } from "./blobHelpers";
 
 const TECH_LOGOS: string[] = [
     "Python",
-    "Javascript",
-    "Typescript",
     "C++",
-    "Csharp",
-    "Java",
+    "Pytorch",
+    "Tensorflow",
+    "Docker",
+    "AWS",
+    "Typescript",
     "React",
     "Tailwind",
-    "AWS",
-    "Pytorch",
-    "Docker",
+    "Flask",
+    "Javascript",
     "MySQL",
 ];
 
@@ -37,12 +37,14 @@ export default function About() {
                     About Me
                 </h1>
                 <p className="text-lg text-center">
-                    I'm a technology enthusiast with a passion for web
-                    development and machine learning. I'm most proficient in
-                    Python, C++, and Node.JS Tech stacks, but I've also used
-                    many other frameworks! Seeking opportunities to contribute
-                    to cutting-edge projects and further develop skills in CS.
-                    Let's collaborate to build something extraordinary!
+                    I'm an ML systems researcher focused on efficient inference
+                    and training for large sequence models. Currently exploring
+                    SSM state compression via low-rank SVD for hybrid SSM prefix
+                    caching, working with SGLang's MambaRadixCache, and studying
+                    attention vs. SSM tradeoffs at scale. Experienced with
+                    multi-GPU infrastructure, post-training quantization, and
+                    performance modeling across DDP and FSDP. Looking for ML
+                    systems or ML research roles — let's build something great!
                 </p>
                 <div className="flex justify-center w-full gap-4 mt-6">
                     <Link href="/JoshuaZhangResume.pdf">
