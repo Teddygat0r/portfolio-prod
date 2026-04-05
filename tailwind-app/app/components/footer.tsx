@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="relative flex flex-col justify-center gap-2 py-8 text-center bg-slate-950">
             <FooterToTop/>
             <div>
-                <p>© Copyright 2023 Joshua Zhang</p>
+                <p>© 2026 Joshua Zhang</p>
             </div>
             <div className="flex flex-row justify-center gap-4 text-xl">
                 <Link

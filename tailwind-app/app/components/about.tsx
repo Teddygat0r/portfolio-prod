@@ -1,28 +1,12 @@
 "use client";
-import TechIcon from "./TechIcon";
 import Link from "next/link";
 import { HiDownload, HiOutlineMail } from "react-icons/hi";
 import { moveBlob, toggleVisible } from "./blobHelpers";
 
-const TECH_LOGOS: string[] = [
-    "Python",
-    "C++",
-    "Pytorch",
-    "CUDA",
-    "Triton",
-    "Docker",
-    "Typescript",
-    "React",
-    "Tailwind",
-    "AWS",
-    "Javascript",
-    "MySQL",
-];
-
 export default function About() {
     return (
         <section
-            className="py-[8%] flex flex-col justify-center gap-12 md:flex-row lg:px-[20%]"
+            className="flex flex-col items-center justify-center gap-8 py-[8%] px-8 lg:px-[20%]"
             id="about"
             onPointerMove={moveBlob}
             onMouseEnter={(e) => {
@@ -32,85 +16,36 @@ export default function About() {
                 toggleVisible("0");
             }}
         >
-            <div className="hidden w-[50%] flex-col md:flex">
-                <h1 className="mb-8 text-3xl font-semibold text-center text-slate-200">
-                    About Me
-                </h1>
-                <p className="text-lg text-center">
-                    I'm an ML systems researcher focused on efficient inference
-                    and training for large sequence models. Currently exploring
-                    SSM state compression via low-rank SVD for hybrid SSM prefix
-                    caching, working with SGLang's MambaRadixCache, and studying
-                    attention vs. SSM tradeoffs at scale. Experienced with
-                    multi-GPU infrastructure, post-training quantization, and
-                    performance modeling across DDP and FSDP. Looking for ML
-                    systems or ML research roles — let's build something great!
-                </p>
-                <div className="flex justify-center w-full gap-4 mt-6">
-                    <Link href="/JoshuaZhangResume.pdf">
-                        <button
-                            className="flex justify-between gap-2 px-4 py-2 transition duration-300 border rounded-md border-violet-300 text-violet-300 hover:border-violet-200 hover:text-violet-200 hover:drop-shadow-glow"
-                            id="resume"
-                        >
-                            Resumé
-                            <HiDownload className="m-auto text-lg" />
-                        </button>
-                    </Link>
-                    <Link href="mailto:jzhang0224@gmail.com">
-                        <button
-                            className="flex justify-between gap-2 px-4 py-2 transition duration-300 border rounded-md border-violet-300 text-violet-300 hover:border-violet-200 hover:text-violet-200 hover:drop-shadow-glow"
-                            id="contact"
-                        >
-                            Contact
-                            <HiOutlineMail className="m-auto text-lg" />
-                        </button>
-                    </Link>
-                </div>
-            </div>
-            <div className="hidden w-[50%] flex-col justify-center md:flex">
-                <h1 className="mb-8 text-3xl font-semibold text-center text-slate-200">
-                    My Tech Stack
-                </h1>
-                <div className="grid justify-center grid-cols-4 gap-8">
-                    {TECH_LOGOS.map((value) => {
-                        return <TechIcon logo={value} key={value} />;
-                    })}
-                </div>
-            </div>
-            <div className="md:hidden">
-                <h1 className="my-8 text-3xl font-semibold text-center text-slate-200">
-                    My Tech Stack
-                </h1>
-                <div className="flex flex-wrap justify-center gap-8">
-                    {TECH_LOGOS.map((value) => {
-                        return <TechIcon logo={value} key={value} />;
-                    })}
-                </div>
-            </div>
-            <div className="w-full pb-12 md:hidden">
-                <h1 className="my-8 text-3xl font-semibold text-center text-slate-200">
-                    Contact Me
-                </h1>
-                <div className="flex flex-wrap justify-center gap-8">
-                    <Link href="/JoshuaZhangResume.pdf">
-                        <button
-                            className="flex justify-between gap-2 px-4 py-2 transition duration-300 border rounded-md border-violet-300 text-violet-300 hover:border-violet-200 hover:text-violet-200 hover:drop-shadow-glow"
-                            id="resume-mobile"
-                        >
-                            Resumé
-                            <HiDownload className="m-auto text-lg" />
-                        </button>
-                    </Link>
-                    <Link href="mailto:jzhang0224@gmail.com">
-                        <button
-                            className="flex justify-between gap-2 px-4 py-2 transition duration-300 border rounded-md border-violet-300 text-violet-300 hover:border-violet-200 hover:text-violet-200 hover:drop-shadow-glow"
-                            id="contact-mobile"
-                        >
-                            Contact
-                            <HiOutlineMail className="m-auto text-lg" />
-                        </button>
-                    </Link>
-                </div>
+            <h1 className="text-3xl font-semibold text-slate-200">
+                About Me
+            </h1>
+            <p className="max-w-2xl text-center text-lg">
+                I'm researching efficient inference and state compression for
+                large sequence models in the SyFI and PnCEL labs at UW.
+                Currently focused on SSM state compression, hybrid prefix
+                caching, and multi-GPU training infrastructure. I work
+                primarily with PyTorch, CUDA, and Triton.
+            </p>
+            <p className="max-w-2xl text-center text-lg text-violet-300">
+                Looking for ML systems or ML research roles.
+            </p>
+            <div className="flex justify-center gap-4 mt-2">
+                <Link href="/JoshuaZhangResume.pdf">
+                    <button
+                        className="flex justify-between gap-2 px-4 py-2 transition duration-300 border rounded-md border-violet-300 text-violet-300 hover:border-violet-200 hover:text-violet-200 hover:drop-shadow-glow"
+                    >
+                        Resume
+                        <HiDownload className="m-auto text-lg" />
+                    </button>
+                </Link>
+                <Link href="mailto:jzhang0224@gmail.com">
+                    <button
+                        className="flex justify-between gap-2 px-4 py-2 transition duration-300 border rounded-md border-violet-300 text-violet-300 hover:border-violet-200 hover:text-violet-200 hover:drop-shadow-glow"
+                    >
+                        Email
+                        <HiOutlineMail className="m-auto text-lg" />
+                    </button>
+                </Link>
             </div>
         </section>
     );

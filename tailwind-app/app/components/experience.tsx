@@ -46,34 +46,25 @@ export default function Experience() {
             id="experience"
         >
             <h1 className="my-8 text-5xl font-bold text-slate-900 md:my-0">
-                My <span className="text-violet-800">Personal Journey</span>
+                <span className="text-violet-800">Experience</span>
             </h1>
-            <div className="grid md:grid-cols-2">
-                <div className="m-auto flex flex-col gap-6 text-left md:mx-[4%]">
-                    <div className="flex gap-12 text-lg font-bold text-slate-900">
-                        <h2>Year</h2>
-                        <h2>Description</h2>
-                    </div>
-                    {experience.map((prop, i) => {
-                        return (
-                            <Role
-                                name={prop.name}
-                                image={prop.image}
-                                time={prop.time}
-                                desc={prop.desc}
-                                url={prop.url}
-                                key={i}
-                            />
-                        );
-                    })}
+            <div className="mx-auto flex max-w-xl flex-col gap-6 text-left">
+                <div className="flex gap-12 text-lg font-bold text-slate-900">
+                    <h2>Year</h2>
+                    <h2>Description</h2>
                 </div>
-                <div className="hidden md:flex">
-                    <img
-                        src="/catCoding.webp"
-                        alt={"Cat Coding"}
-                        className="m-auto rounded-full aspect-square"
-                    />
-                </div>
+                {experience.map((prop, i) => {
+                    return (
+                        <Role
+                            name={prop.name}
+                            image={prop.image}
+                            time={prop.time}
+                            desc={prop.desc}
+                            url={prop.url}
+                            key={i}
+                        />
+                    );
+                })}
             </div>
         </section>
     );

@@ -29,8 +29,8 @@ export default function Hero() {
                 </span>
                 <span className="hidden md:inline">
                     .<br />
-                    Building efficient inference for{" "}
-                    <span className="text-violet-300">sequence models.</span>{" "}
+                    <span className="text-violet-300">SyFI</span> and{" "}
+                    <span className="text-violet-300">PnCEL</span> Labs.
                 </span>
             </h2>
             <div className="flex flex-row gap-4 mx-auto mb-auto text-4xl md:m-auto">

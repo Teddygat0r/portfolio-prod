@@ -4,7 +4,8 @@ import Link from "next/link";
 import LinkDetails from "../interfaces/LinkDetails";
 
 const NAVBAR_URLS: LinkDetails[] = [
-    { desc: "Projects", url: "#portfolio" },
+    { desc: "Research", url: "#research" },
+    { desc: "Experience", url: "#experience" },
     { desc: "About", url: "#about" },
     { desc: "Friends", url: "friends" },
 ];

@@ -9,9 +9,9 @@ export default function Home() {
     return (
         <div className="flex h-full w-full flex-col justify-center">
             <Hero />
-            <Experience />
             <About />
             <Portfolio />
+            <Experience />
             <Analytics />
             <div
                 className="absolute -z-10 aspect-square w-[10%] justify-start rounded-full bg-gradient-to-br from-sky-500 to-emerald-800 opacity-0 blur-[100px] transition duration-1000"
