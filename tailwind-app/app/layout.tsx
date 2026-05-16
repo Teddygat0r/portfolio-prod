@@ -6,8 +6,8 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Joshua Zhang | SDE",
-    description: "i love ds",
+    title: "Joshua Zhang | ML Systems",
+    description: "ML systems researcher at the University of Washington. Focused on efficient inference, SSM state compression, and multi-GPU training infrastructure.",
 };
 
 export default function RootLayout({
@@ -16,11 +16,9 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" className="dark">
-            <body
-                className={`${inter.className} flex flex-col text-slate-400 dark:bg-slate-900`}
-            >
-                <main className="h-full">{children}</main>
+        <html lang="en">
+            <body className={inter.className}>
+                <main>{children}</main>
                 <GoogleAnalytics gaId={"G-HGHL1B13CQ"} />
             </body>
         </html>
